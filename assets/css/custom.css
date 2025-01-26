@@ -1,0 +1,233 @@
+.footer-middle {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+}
+.text-right{
+    text-align: right;
+}
+.pt-90 {
+    padding-top: 90px !important;
+}
+.my-account__address-list {
+    display: flex;
+    gap: 1.625rem;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-select {
+    height: 48px;
+}
+
+
+
+/* General Styling */
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Fullscreen */
+    overflow: hidden;
+  }
+  
+  .slideshow-slide {
+    position: relative;
+    height: 100%;
+   
+  }
+  
+  .slide-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+    z-index: 2;
+  }
+  
+  
+  .foreground-image {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    z-index: 2;
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .foreground-image img {
+    max-width: 300px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .slideshow-text {
+    color: #fff;
+    z-index: 3;
+  }
+
+  
+  
+  /* Floating Animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+
+
+
+  /* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  
+  .btn-1 {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #222426;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-1:hover {
+    background-color: #2f3132;
+  }
+  
+  /* Hero Image */
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image {
+      margin-top: 20px;
+    }
+  }
+  
+
+
+
+  /* Base styles for navigation */
+.bottom-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 25px; /* Distance from bottom of the page */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent; 
+  padding: 10px;/* Background color of the navigation */
+  z-index: 1000;
+
+}
+
+/* Style each navigation item */
+.nav-item {
+  text-decoration: none;
+  margin: 0 35px; /* Space between icons */
+}
+
+/* Circle wrapper for icons */
+.icon-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: white; /* Background color of the circle */
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.icon-wrapper:hover {
+  transform: scale(1.1); /* Slightly enlarges on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+/* Icon styles */
+.icon-wrapper svg {
+  width: 19px;
+  height: 19px;
+  fill: #000; /* Icon color */
+  transition: fill 0.2s ease;
+}
+
+.icon-wrapper:hover svg {
+  fill: #007BFF; /* Change color on hover */
+}
